@@ -1,0 +1,5 @@
+# Add this block to the estate Caddyfile (the one the octera-estate-accept caddy
+# service serves), then reload Caddy. Caddy auto-provisions the TLS cert.
+m81.gerrydekens.com {
+	reverse_proxy estate-m81-wallet:8100
+}

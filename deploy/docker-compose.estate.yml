@@ -1,0 +1,24 @@
+# m81 Wallet — estate deploy (octera-estate), matching the TPW/yina pattern.
+# Builds the AirGap static SPA from the repo Dockerfile (node-static serves www/
+# on 8100), joins the accept estate network so Caddy can reverse-proxy it at
+# m81.gerrydekens.com. No host port — Caddy fronts it internally.
+#
+# Run from ~/deploy-root/m81-wallet:
+#   docker compose -p octera-estate-accept -f deploy/docker-compose.estate.yml up -d --build m81-wallet
+services:
+  m81-wallet:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    image: octera-estate-accept-m81-wallet
+    container_name: estate-m81-wallet
+    restart: unless-stopped
+    expose:
+      - "8100"
+    networks:
+      - estate
+
+networks:
+  estate:
+    external: true
+    name: octera-estate-accept_estate-accept
