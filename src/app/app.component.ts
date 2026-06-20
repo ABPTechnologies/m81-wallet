@@ -21,6 +21,7 @@ import { AstarModule } from '@airgap/astar'
 import { BitcoinModule } from '@airgap/bitcoin'
 import { AcurastModule } from '@airgap/acurast'
 import { StellarModule } from '@airgap/stellar'
+import { TronModule } from 'm81-tron-module' // ABP: Tron + TRC-20 USDT (m81 settlement asset)
 
 import {
   AirGapMarketWallet,
@@ -286,7 +287,8 @@ export class AppComponent implements AfterViewInit {
       new BnbModule(),
       new BaseModule(),
       new AcurastModule(),
-      new StellarModule()
+      new StellarModule(),
+      new TronModule() // ABP: Tron (TRX) + TRC-20 USDT
     ])
     const v1Protocols = await this.modulesService.loadProtocols('online', [
       MainProtocolSymbols.XTZ_SHIELDED,

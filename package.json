@@ -64,6 +64,7 @@
     "@airgap/astar": "0.13.46",
     "@airgap/beacon-sdk": "5.0.0-beta.3",
     "@airgap/bitcoin": "0.13.46",
+    "m81-tron-module": "github:ABPTechnologies/m81-tron-module",
     "@airgap/coinlib-core": "0.13.46",
     "@airgap/coreum": "0.13.46",
     "@airgap/cosmos": "0.13.46",
