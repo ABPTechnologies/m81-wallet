@@ -3,13 +3,13 @@
 
 /** Ionic CSS Variables **/
 :root {
-  /** primary **/
-  --ion-color-primary: #00e8cc;
-  --ion-color-primary-rgb: 0, 232, 204;
-  --ion-color-primary-contrast: #311b58;
-  --ion-color-primary-contrast-rgb: 49, 27, 88;
-  --ion-color-primary-shade: #00ccb4;
-  --ion-color-primary-tint: #1aead1;
+  /** primary — ABP green (m81 brand; fork of AirGap teal) **/
+  --ion-color-primary: #7cb342;
+  --ion-color-primary-rgb: 124, 179, 66;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #6d9e3a;
+  --ion-color-primary-tint: #89bb55;
 
   /** secondary **/
   --ion-color-secondary: #311b58;

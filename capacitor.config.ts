@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli'
 
 const config: CapacitorConfig = {
-  appId: 'it.airgap.wallet',
-  appName: 'AirGap Wallet',
+  appId: 'com.gerrydekens.m81wallet',
+  appName: 'm81 Wallet',
   bundledWebRuntime: false,
   webDir: 'www',
   plugins: {

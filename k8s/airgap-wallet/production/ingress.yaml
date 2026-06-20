@@ -18,7 +18,7 @@ spec:
             port:
               number: 80
         pathType: ImplementationSpecific
-  - host: wallet.airgap.it
+  - host: m81.gerrydekens.com
     http:
       paths:
       - backend:
@@ -32,5 +32,5 @@ spec:
     - __CI_PROJECT_NAME__.prod.gke.papers.tech
     secretName: __CI_PROJECT_NAME__-prod-tls
   - hosts:
-    - wallet.airgap.it
-    secretName: wallet-airgap-it-prod-tls
+    - m81.gerrydekens.com
+    secretName: m81-gerrydekens-com-prod-tls

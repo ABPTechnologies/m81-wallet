@@ -1,7 +1,7 @@
 {
-  "name": "airgap-wallet",
+  "name": "m81-wallet",
   "version": "0.0.1",
-  "author": "Papers GmbH <contact@papers.ch> (https://papers.ch)",
+  "author": "ABP Technologies (m81.gerrydekens.com) — fork of AirGap Wallet © Papers GmbH",
   "homepage": "https://www.airgap.it",
   "private": true,
   "scripts": {
